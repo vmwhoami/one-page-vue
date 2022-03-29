@@ -3,7 +3,7 @@
     <top-nav />
     <main-header />
     <under-header/>
-    <carousel/>
+    <carousel :slides="slides"/>
   </b-container>
 </template>
 
@@ -23,7 +23,16 @@ export default {
     Carousel
   },
   data() {
-    return {};
+    return {
+      slides: [
+        {
+          title: "table of contents",
+          alt: "table of contents",
+          img1: "../assets/images/tableOfContents.jpg",
+          img2: "../assets/images/yearOfNewNormal.jpg"
+        }
+      ]
+    };
   },
   methods: {},
 };

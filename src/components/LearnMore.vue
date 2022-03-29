@@ -1,16 +1,23 @@
 <template>
-  <header fluid class="bg-blue">
-    
-  </header>
+  <section class="my-3">
+    <b-container class="">
+     
+    </b-container>
+  </section>
 </template>
 
 
 <script>
+
 export default {
-  name: "UnderHeader",
+  name: "LearnMore",
+
+  props: { },
 
   data() {
-    return {};
+    return {
+
+    };
   },
   methods: {},
 };
