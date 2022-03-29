@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid="xl">
+  <b-container fluid>
     <top-nav />
     <main-header />
   </b-container>
@@ -17,22 +17,14 @@ export default {
     MainHeader,
   },
   data() {
-
-    return {
-      dismissSecs: 10,
-      dismissCountDown: 0,
-      showDismissibleAlert: false,
-    };
+    return {};
   },
-  methods: {
-    countDownChanged(dismissCountDown) {
-      this.dismissCountDown = dismissCountDown;
-    },
-    showAlert() {
-      this.dismissCountDown = this.dismissSecs;
-    },
-  },
+  methods: {},
 };
 </script>
 
- 
+ <style>
+#app .container-fluid {
+  padding: 0;
+}
+</style>

@@ -1,6 +1,12 @@
 <template>
-  <header class="w-100 p-3">
-    <h2>Main header</h2>
+  <header fluid class="bg-blue">
+    <b-container class="header-bg d-flex flex-column justify-content-center">
+      <h1>Everyone gets phishing emails. Not everyone falls for them.</h1>
+      <p>
+        Find out the risk to your users from today’s biggest cyber threats in
+        our eighth annual State of the Phish report.
+      </p>
+    </b-container>
   </header>
 </template>
 
@@ -10,26 +16,35 @@ export default {
   name: "MainHeader",
 
   data() {
-    return {
-      dismissSecs: 10,
-      dismissCountDown: 0,
-      showDismissibleAlert: false,
-    };
+    return {};
   },
-  methods: {
-    countDownChanged(dismissCountDown) {
-      this.dismissCountDown = dismissCountDown;
-    },
-    showAlert() {
-      this.dismissCountDown = this.dismissSecs;
-    },
-  },
+  methods: {},
 };
 </script>
 
 
 <style scoped>
-.bg-red {
-  background-color: red;
+  h1 {
+    color: white;
+    max-width: 500px;
+  }
+
+p {
+  color: white;
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.bg-blue {
+  background-image: url(../assets/images/learnMore.jpg);
+  background-position-y: 86px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: #0097d8;
+}
+
+.header-bg {
+  padding-top: 90px;
+  min-height: 600px;
 }
 </style>
