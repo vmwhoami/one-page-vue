@@ -39,7 +39,8 @@ p {
   background-image: url(../assets/images/learnMore.jpg);
   background-position-y: 86px;
   background-repeat: no-repeat;
-  object-fit: cover;
+  object-position: center;
+  object-fit: scale-down;
   background-color: #0097d8;
 }
 

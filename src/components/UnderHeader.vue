@@ -1,13 +1,20 @@
 <template>
-  <b-nav class="w-100 p-3">
-    <b-container fluid="xxl">
-      <h2>Navigation</h2>
-        <a href="index.html">
-          proofpoint
-        </a>
-        <b-button squared>Contact Us</b-button>
-    </b-container>
-  </b-nav>
+  <section fluid class="bg-blue">
+    <div class="container pb-4">
+      <h3 class="py-3">In this report</h3>
+      <div class="row">
+        <div class="col">
+          <p>The impact of socially engineered attacks</p>
+        </div>
+        <div class="col">
+          <p>Behaviours that could be putting you at risk</p>
+        </div>
+        <div class="col">
+          <p>Tips to make your defences more effective</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 
@@ -16,26 +23,37 @@ export default {
   name: "UnderHeader",
 
   data() {
-    return {
-      dismissSecs: 10,
-      dismissCountDown: 0,
-      showDismissibleAlert: false,
-    };
+    return {};
   },
-  methods: {
-    countDownChanged(dismissCountDown) {
-      this.dismissCountDown = dismissCountDown;
-    },
-    showAlert() {
-      this.dismissCountDown = this.dismissSecs;
-    },
-  },
+  methods: {},
 };
 </script>
 
 
 <style scoped>
-.bg-red {
-  background-color: red;
+h3 {
+  color: white;
+  font-weight: 200;
+  font-size: 18px;
+  font-family: "Roboto-Regula";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+p {
+  color: white;
+  font-weight: 200;
+  font-size: 16px;
+  max-width: 320px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.col:not(:last-child) {
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.bg-blue {
+  background-color: #0097d8;
 }
 </style>
