@@ -6,6 +6,7 @@
     <carousel :slides="slides"/>
     <learn-more/>
     <call-to-action/>
+    <main-footer/>
   </b-container>
 </template>
 
@@ -16,6 +17,7 @@ import UnderHeader from "../components/UnderHeader.vue";
 import Carousel from "../components/Carousel.vue"
 import LearnMore from "../components/LearnMore.vue"
 import CallToAction from "../components/CallToAction.vue"
+import MainFooter from '@/components/MainFooter.vue';
 
 export default {
   name: "MainPage",
@@ -26,7 +28,8 @@ export default {
     UnderHeader,
     Carousel,
     LearnMore,
-    CallToAction
+    CallToAction,
+    MainFooter
   },
   data() {
     return {

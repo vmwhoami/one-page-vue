@@ -6,7 +6,11 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum porttitor purus et sollicitudin.
         </p>
+        <span>
+          <b-button squared variant="primary" class="lear-more">Learn more</b-button>
+        </span>
       </div>
+
     </b-container>
   </section>
 </template>
@@ -28,11 +32,9 @@ export default {
 
 <style scoped>
 .container {
-  min-height: 460px;
+  min-height: 370px;
   position: relative;
- 
-
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 43%, rgba(255,255,255,0) 100%);
 }
 
 .container::after {
@@ -45,7 +47,7 @@ export default {
   background-image: url(../assets/images/fatherDaughter.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   z-index: -1;
 }
 
@@ -58,5 +60,9 @@ p {
   color: white;
   font-size: 18px;
   max-width: 420px;
+}
+
+.lear-more{
+  font-family: "FjallaOne";
 }
 </style>
