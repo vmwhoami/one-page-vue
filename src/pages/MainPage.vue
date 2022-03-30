@@ -4,6 +4,7 @@
     <main-header />
     <under-header/>
     <carousel :slides="slides"/>
+    <learn-more/>
   </b-container>
 </template>
 
@@ -12,6 +13,7 @@ import TopNav from "../components/TopNav .vue";
 import MainHeader from "../components/MainHeader.vue";
 import UnderHeader from "../components/UnderHeader.vue";
 import Carousel from "../components/Carousel.vue"
+import LearnMore from "../components/LearnMore.vue"
 
 export default {
   name: "MainPage",
@@ -20,7 +22,8 @@ export default {
     TopNav,
     MainHeader,
     UnderHeader,
-    Carousel
+    Carousel,
+    LearnMore
   },
   data() {
     return {
