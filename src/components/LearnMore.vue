@@ -1,13 +1,19 @@
 <template>
   <section class="my-3">
-    <b-container class="conainer">
-      <h1 class="pb-2">
-        Learn More
-      </h1>
-      <p>
-        Find out the risk to your users from today’s biggest cyber threats in
-        our eighth annual State of the Phish report.
-      </p>
+    <b-container
+      class="container d-flex align-items-center justify-content-end"
+    >
+      <div class="d-flex flex-column p-5">
+        <h1 class="pb-2">Learn More</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          bibendum porttitor purus et sollicitudin.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          bibendum porttitor purus et sollicitudin.
+        </p>
+      </div>
     </b-container>
   </section>
 </template>
@@ -28,23 +34,23 @@ export default {
 
 
 <style scoped>
-.conainer {
+.container {
   min-height: 460px;
+  position: relative;
   background-image: url(../assets/images/learnMore.jpg);
   background-repeat: no-repeat;
-  /* transform: scaleX(-1); */
-  object-fit: cover;
-  background-color: #0097d8;
+  background-position: center;
+  background-size: cover;
 }
 
-  h1 {
-    color: white;
-    max-width: 500px;
-  }
+h1 {
+  color: white;
+  max-width: 500px;
+}
 
 p {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   max-width: 420px;
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
   <header fluid class="bg-blue">
     <b-container class="header-bg d-flex flex-column justify-content-center">
-      <h1 class="pb-5">Everyone gets phishing emails. Not everyone falls for them.</h1>
+      <h1 class="pb-5">
+        Everyone gets phishing emails. Not everyone falls for them.
+      </h1>
       <p>
         Find out the risk to your users from today’s biggest cyber threats in
         our eighth annual State of the Phish report.
@@ -24,10 +26,10 @@ export default {
 
 
 <style scoped>
-  h1 {
-    color: white;
-    max-width: 500px;
-  }
+h1 {
+  color: white;
+  max-width: 500px;
+}
 
 p {
   color: white;
@@ -36,11 +38,12 @@ p {
 }
 
 .bg-blue {
-  background-image: url(../assets/images/learnMore.jpg);
-  background-position-y: 86px;
+  background-image: url(../assets/images/header.jpg);
+
   background-repeat: no-repeat;
-  object-position: center;
-  object-fit: scale-down;
+  background-position: center;
+  background-size: cover;
+
   background-color: #0097d8;
 }
 
