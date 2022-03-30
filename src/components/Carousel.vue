@@ -2,9 +2,8 @@
   <section class="my-3">
     <b-container class="d-flex justify-content-between align-items-center canvas">
       <div class="images-container d-flex">
-     
-        <img :src="slides[0].img1" alt="slides.alt" />
-        <img :src="slides.img2" :alt="slides.alt"  />
+        <img :src="secondImagePath" :alt="imageAlt" />
+        <img :src="firstImagePath" :alt="imageAlt" />
       </div>
       <slide-button class="left-btn" direction="left" @prevNext="prevNext" />
       <slide-button class="right-btn" direction="right" @prevNext="prevNext" />
@@ -34,7 +33,21 @@ export default {
       index: 0,
     };
   },
-  
+  computed: {
+    firstImagePath() {
+      return require(`@/assets/images/${this.slides[this.index].img1}`)
+    },
+
+    secondImagePath() {
+      return require(`@/assets/images/${this.slides[this.index].img2}`)
+    },
+
+    imageAlt() {
+      return this.slides[this.index].alt
+    },
+
+  },
+
   methods: {
     prevNext(direction) {
       if (direction === "left") {

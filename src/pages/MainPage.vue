@@ -28,8 +28,14 @@ export default {
         {
           title: "table of contents",
           alt: "table of contents",
-          img1: "../assets/images/tableOfContents.jpg",
-          img2: "../assets/images/yearOfNewNormal.jpg"
+          img1: "tableOfContents.jpg",
+          img2: "yearOfNewNormal.jpg"
+        },
+        {
+          title: "some text",
+          alt: "some-text",
+          img1: "header.jpg",
+          img2: "fatherDaughter.jpg"
         }
       ]
     };
