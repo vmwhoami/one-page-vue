@@ -2,11 +2,11 @@
   <b-container fluid>
     <top-nav />
     <main-header />
-    <under-header/>
-    <carousel :slides="slides"/>
-    <learn-more/>
-    <call-to-action/>
-    <main-footer/>
+    <under-header />
+    <carousel :slides="slides" />
+    <learn-more />
+    <call-to-action />
+    <main-footer />
   </b-container>
 </template>
 
@@ -14,10 +14,10 @@
 import TopNav from "../components/TopNav .vue";
 import MainHeader from "../components/MainHeader.vue";
 import UnderHeader from "../components/UnderHeader.vue";
-import Carousel from "../components/Carousel.vue"
-import LearnMore from "../components/LearnMore.vue"
-import CallToAction from "../components/CallToAction.vue"
-import MainFooter from '@/components/MainFooter.vue';
+import Carousel from "../components/Carousel.vue";
+import LearnMore from "../components/LearnMore.vue";
+import CallToAction from "../components/CallToAction.vue";
+import MainFooter from "@/components/MainFooter.vue";
 
 export default {
   name: "MainPage",
@@ -29,7 +29,7 @@ export default {
     Carousel,
     LearnMore,
     CallToAction,
-    MainFooter
+    MainFooter,
   },
   data() {
     return {
@@ -38,18 +38,17 @@ export default {
           title: "table of contents",
           alt: "table of contents",
           img1: "tableOfContents.jpg",
-          img2: "yearOfNewNormal.jpg"
+          img2: "yearOfNewNormal.jpg",
         },
         {
           title: "some text",
           alt: "some-text",
-          img1: "header.jpg",
-          img2: "fatherDaughter.jpg"
-        }
-      ]
+          img1: "resume_templates.png",
+          img2: "HowToChooseTheRight.jpg",
+        },
+      ],
     };
   },
-  methods: {},
 };
 </script>
 

@@ -39,11 +39,9 @@ p {
 
 .bg-blue {
   background-image: url(../assets/images/header.jpg);
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   background-color: #0097d8;
 }
 

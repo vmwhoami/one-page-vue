@@ -1,9 +1,12 @@
 <template>
   <section class="my-3">
-    <b-container class="d-flex justify-content-between align-items-center canvas">
+    <b-container
+      class="d-flex justify-content-center align-items-center canvas">
       <div class="images-container d-flex">
-        <img :src="secondImagePath" :alt="imageAlt" />
-        <img :src="firstImagePath" :alt="imageAlt" />
+        <div class="image-cont">
+          <img :src="secondImagePath" :alt="imageAlt" />
+          <img :src="firstImagePath" :alt="imageAlt" />
+        </div>
       </div>
       <slide-button class="left-btn" direction="left" @prevNext="prevNext" />
       <slide-button class="right-btn" direction="right" @prevNext="prevNext" />
@@ -13,7 +16,7 @@
 
 
 <script>
-import SlideButton from "./SlideButton.vue";
+import SlideButton from "./small-components/SlideButton.vue";
 export default {
   name: "UnderHeader",
 
@@ -35,35 +38,34 @@ export default {
   },
   computed: {
     firstImagePath() {
-      return require(`@/assets/images/${this.slides[this.index].img1}`)
+      return require(`@/assets/images/carousel/${this.slides[this.index].img1}`);
     },
 
     secondImagePath() {
-      return require(`@/assets/images/${this.slides[this.index].img2}`)
+      return require(`@/assets/images/carousel/${this.slides[this.index].img2}`);
     },
 
     imageAlt() {
-      return this.slides[this.index].alt
+      return this.slides[this.index].alt;
     },
-
   },
 
   methods: {
     prevNext(direction) {
       if (direction === "left") {
         this.prevPictures();
-        }else{
+      } else {
         this.nextPictures();
       }
     },
     nextPictures() {
-      this.index+=1;
+      this.index += 1;
       if (this.index > this.slides.length - 1) {
         this.index = 0;
       }
     },
     prevPictures() {
-      this.index-=1;
+      this.index -= 1;
       if (this.index < 0) {
         this.index = this.slides.length - 1;
       }
@@ -95,10 +97,21 @@ export default {
 .images-container {
   height: 90%;
   width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.images-container > img {
-  width: 100%;
+
+.image-cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  object-fit: contain;
+  width: 100%;
+}
+
+  img {
+  height: 100%;
+  object-fit: scale-down;
 }
 </style>

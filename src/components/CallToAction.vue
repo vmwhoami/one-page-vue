@@ -19,13 +19,6 @@
 <script>
 export default {
   name: "CallToAction",
-
-  props: {},
-
-  data() {
-    return {};
-  },
-  methods: {},
 };
 </script>
 

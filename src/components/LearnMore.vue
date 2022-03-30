@@ -1,8 +1,7 @@
 <template>
   <section class="my-3">
     <b-container
-      class="container d-flex align-items-center justify-content-end"
-    >
+      class="container d-flex align-items-center justify-content-end">
       <div class="d-flex flex-column p-5">
         <h1 class="pb-2">Learn More</h1>
         <p>
@@ -21,14 +20,7 @@
 
 <script>
 export default {
-  name: "LearnMore",
-
-  props: {},
-
-  data() {
-    return {};
-  },
-  methods: {},
+  name: "LearnMore", 
 };
 </script>
 

@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .button {
-  background-image: url(../assets/images/arrow.jpg);
+  background-image: url(../../assets/images/arrow.jpg);
   width: 60px;
   height: 80px;
   background-size: cover;
