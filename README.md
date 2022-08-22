@@ -1,7 +1,11 @@
 # vue-test
-This is a test take home assignment for Vue.js. The assignment was to create a simple Vue.js application  following the design of the provided mockup. Time spent on the assigment was almost five hours. I passed the assignment but refused the offer.
+This is a test take home assignment for Vue.js. The assignment was to create a simple Vue.js application  following the design of the provided mockup. Time spent on the assigment was around five hours.
 
 ![screenshot](screen.gif)
+
+### The provided mockup
+
+![screenshot](preview.png)
 
 ## Project setup
 ```
@@ -22,6 +26,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
